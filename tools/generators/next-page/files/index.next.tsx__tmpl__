@@ -1,0 +1,3 @@
+import { <%= className %>Page } from "./<%= className %>Page";
+
+export default <%= className %>Page;

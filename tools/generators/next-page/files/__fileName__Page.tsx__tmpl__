@@ -1,0 +1,10 @@
+import * as Styled from "./styles";
+import type { <%= className %>PageProps as Props } from "./types";
+
+export function <%= className %>Page({ className }: Props) {
+  return (
+    <Styled.Wrapper className={className}>
+      <h1><%= className %>Page</h1>
+    </Styled.Wrapper>
+  );
+};

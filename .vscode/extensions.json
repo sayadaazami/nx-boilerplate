@@ -1,8 +1,36 @@
 {
   "recommendations": [
     "nrwl.angular-console",
-    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "smulyono.reveal",
+    "ms-azuretools.vscode-docker",
+    "cardinal90.multi-cursor-case-preserve",
+    "k--kato.intellij-idea-keybindings",
+    "simonsiefke.svg-preview",
+    "wmaurer.change-case",
+
+    "alefragnani.numbered-bookmarks",
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree",
+
+    "dsznajder.es7-react-js-snippets",
+
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "christian-kohler.path-intellisense",
+
+    "esbenp.prettier-vscode",
+    "styled-components.vscode-styled-components",
+    "styled-components.vscode-styled-components",
+    "fallenmax.styled-components-extractor",
+    "jonkwheeler.styled-components-snippets",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+
+    "Orta.vscode-jest",
+
+    "equinusocio.vsc-material-theme",
+    "equinusocio.vsc-material-theme-icons",
+    "equinusocio.vsc-community-material-theme"
   ]
 }

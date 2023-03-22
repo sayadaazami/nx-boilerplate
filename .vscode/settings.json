@@ -1,0 +1,10 @@
+{
+  "explorer.compactFolders": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.colorTheme": "Community Material Theme Darker",
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "DEV"]
+}

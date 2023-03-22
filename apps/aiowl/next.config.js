@@ -12,6 +12,15 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  pageExtensions: ['next.tsx', 'next.ts', 'next.jsx', 'next.js'],
+  async rewrites() {
+    return [
+      {
+        source: '/index',
+        destination: '/',
+      },
+    ];
+  },
 };
 
 module.exports = withNx(nextConfig);
