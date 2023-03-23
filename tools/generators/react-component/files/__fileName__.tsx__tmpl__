@@ -1,0 +1,10 @@
+import * as Styled from "./styles";
+import type { <%= className %>Props as Props } from "./types.d";
+
+export function <%= className %>({ className }: Props) {
+  return (
+    <Styled.Wrapper className={className}>
+      <b><%= className %></b>
+    </Styled.Wrapper>
+  );
+};

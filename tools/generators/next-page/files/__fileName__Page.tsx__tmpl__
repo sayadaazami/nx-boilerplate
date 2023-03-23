@@ -1,5 +1,5 @@
 import * as Styled from "./styles";
-import type { <%= className %>PageProps as Props } from "./types";
+import type { <%= className %>PageProps as Props } from "./types.d";
 
 export function <%= className %>Page({ className }: Props) {
   return (

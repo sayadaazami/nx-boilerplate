@@ -8,17 +8,13 @@
     "k--kato.intellij-idea-keybindings",
     "simonsiefke.svg-preview",
     "wmaurer.change-case",
-
     "alefragnani.numbered-bookmarks",
     "wayou.vscode-todo-highlight",
     "gruntfuggly.todo-tree",
-
     "dsznajder.es7-react-js-snippets",
-
     "firsttris.vscode-jest-runner",
     "dbaeumer.vscode-eslint",
     "christian-kohler.path-intellisense",
-
     "esbenp.prettier-vscode",
     "styled-components.vscode-styled-components",
     "styled-components.vscode-styled-components",
@@ -26,9 +22,7 @@
     "jonkwheeler.styled-components-snippets",
     "csstools.postcss",
     "bradlc.vscode-tailwindcss",
-
     "Orta.vscode-jest",
-
     "equinusocio.vsc-material-theme",
     "equinusocio.vsc-material-theme-icons",
     "equinusocio.vsc-community-material-theme"

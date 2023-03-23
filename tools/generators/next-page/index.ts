@@ -10,6 +10,11 @@ import {
 } from '@nrwl/devkit';
 import { NormalizedSchema, Schema } from './types';
 
+function riseError(msg: string) {
+  logger.error(msg);
+  throw new Error(msg);
+}
+
 export default async function (host: Tree, schema: Schema) {
   const project = getProject(host, schema);
   const options = await normalizeOptions(schema, project);
@@ -30,19 +35,19 @@ async function normalizeOptions(
     className,
     fileName: className,
     projectSourceRoot: project.sourceRoot ?? '',
-    flat: false,
-    skipTests: true,
   };
 }
 
 function getProject(host: Tree, options: Schema) {
-  const project = getProjects(host).get(options.project);
-  if (!project) {
-    logger.error(
+  const project = getProjects(host).get(options.project)!;
+  if (!project)
+    riseError(
       `Cannot find the ${options.project} project. Please double check the project name.`
     );
-    throw new Error();
-  }
+
+  if (project.projectType === 'library')
+    riseError(`Cannot add page in libraries!`);
+
   return project;
 }
 
@@ -51,7 +56,7 @@ function getDirectory(options: Schema) {
   const fileName = genNames.className;
   let baseDir = options.directory ?? 'pages';
 
-  return options.flat ? baseDir : joinPathFragments(baseDir, fileName);
+  return joinPathFragments(baseDir, fileName);
 }
 
 function createComponentFiles(host: Tree, options: NormalizedSchema) {
